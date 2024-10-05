@@ -320,7 +320,14 @@ nav{
     font-size:1.5rem;
     margin: 4.375rem 0;
 }
-
+.th{
+    width: 100%;
+    color: #1F1F1F;
+    font-size: 3rem;
+    text-align: center;
+    background-color: white;
+    display: none;
+}
 /*End Testimonials*/
 
 /*Newsletter*/
@@ -429,5 +436,336 @@ footer{
 /*End Footer*/
 
 @media only screen and (max-width: 768px){
+    header{
+        height: 8rem;
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top:0;
+        left:0;
+        height: 4rem;
+        width: 100%;
+        padding: 4rem 1rem;
+        box-sizing: border-box;
+        z-index: 100;
+    }
+    .nav-items{
+        display: none;
+    }
+    .below-logo{
+        width: 100%;
+    }
+    footer{
+        padding: 4rem 1rem;
+        background-color:black;
+        color: white;
     
+    }
+    .footer-container-of-all{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-container-of-all > *{
+        margin-top: 2rem;
+    }
+    .footer-left-container{
+        width: 100%;
+        align-items: center;
+    }
+    .footer-left-container >*{
+        margin-top: 1rem;
+    }
+    .link-tree a{
+        text-decoration: none;
+        margin:0.6rem;
+    }
+    .footer-items{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .footer-items > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .footer-items > div> h6{
+        text-align: center;
+    }
+    .hero-grid-container{
+        padding: 0 1rem;
+        box-sizing: border-box;
+        display: grid;
+        justify-content: space-between;
+        grid-template-areas: "hero-text" "image-1" "image-2" "button-numbers";
+        row-gap: 2rem;
+    }
+    .numbers-flex{
+        width: 80%;
+    }
+    .hero-image-1{
+        grid-area: image-1;
+        justify-self: center;
+        width: 75%;
+    }
+    .hero-image-2{
+        width: 75%;
+        margin-left: 3rem;
+    }
+    .button-numbers{
+        grid-area: button-numbers;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero-image-2-container{
+        grid-area: image-2;
+        position: relative;
+        justify-self: center;
+    }
+    .hero-title{
+        font-size: 6rem;
+        text-align: center;
+    }
+    .hero-sub{
+        font-size:1.3rem ;
+        width: 100%;
+        text-align: center;
+    }
+    .hero-cta{
+
+        font-size: 1.2rem;
+
+        padding: 1rem 2.5rem;
+
+    }
+    .numbers-flex .number{
+        margin-top: 1rem;
+        font-size: 3rem;
+    }
+    .numbers-flex .number-title{
+        font-size: 1rem;
+    }
+    .services{
+        padding: 2rem 1rem;
+    }
+    .services-title{
+        font-size: 1.8rem;
+        text-align: center;
+
+    }
+    .services-grid-container{
+        grid-template-columns: 100%;
+        justify-content: center;
+        width: 100%;
+    }
+    .services-grid-container >div > p{
+        text-align: center;
+    }
+    .brief{
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .brief-text-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .brief-text-container > p{
+        text-align: center;
+    }
+    .brief-text-container h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .brief-text-container p{
+        font-size: 1.3rem;
+    }
+    .brief img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .testimonials{
+        padding: 2rem 1rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials >img{
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+    }
+    .testim-inner{
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    
+    }
+    .testim-inner h1{
+        width: 100%;
+        color: #1F1F1F;
+        font-size: 3rem;
+        text-align: center;
+        background-color: white;
+        display: none;
+    }
+    .th{
+        width: 100%;
+        color: #1F1F1F;
+        font-size: 3rem;
+        margin: 2rem 0;
+        text-align: center;
+        background-color: white;
+        display: block;
+    }
+    .reviews-container{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-between;
+        z-index: 99;
+        background-color: white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        
+    }
+    .reviews-container > div{
+        background-color: #1F1F1F;
+        color: white;
+        padding: 7.25rem 3.5rem;
+        margin-top: 2rem;
+    }
+    .testimonials-buttons-container{
+        position: absolute;
+        bottom: 7.25rem;
+    
+    }
+    .testimonials-buttons-container button{
+        width: 73px;
+        height: 73px;
+        background-color: #F1F1F1;
+        border:none;
+    }
+    
+    .review{
+        font-size:1.5rem;
+        margin: 4.375rem 0;
+    }
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+    .newsletter-title{
+        font-size:3rem;
+        color: #1F1F1F;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+    }
+    .newsletter p{
+        font-size: 1.3rem;
+        color: #545454;
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+        margin: 3.1rem 0;
+    }
+    .input-container{
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        height: 6.5rem;
+        padding-left:2rem;
+        box-sizing: border-box;
+        padding-right: 0.5rem;
+        margin-bottom: -4rem;
+    
+    }
+    .input-container input{
+        width: 70%;
+        height: 100%;
+        border: none;
+        font-size: 0.8rem;
+    }
+    .input-container button{
+        width: 30%;
+        height: 80%;
+        background-color: #1F1F1F;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: white;
+
+    }
+    input:focus{
+        outline: none;
+    }
+    
+    .steps{
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    
+    }
+    .steps-text-container h1{
+        color:#1F1F1F;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .steps-image{
+        width: 100%;
+        object-fit: cover;
+    }
+    .steps-text-flex-contianer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 3rem;
+        width: 90%;
+    }
+    .uni-step{
+        margin-top:3rem;
+        display: flex;
+    }
+    .uni-step svg{
+        width: 50%;
+        margin-right: 4rem;
+    }
+    .step-title{
+        font-size: 1.5rem;
+        color:#1F1F1F;
+        font-weight: 700;
+        
+    }
+    
+    .step-desc{
+        color:#545454;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 1.3rem;
+    }
+
 }
